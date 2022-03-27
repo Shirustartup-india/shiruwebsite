@@ -1,0 +1,649 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Shiru Cafe</title>
+</head>
+<body>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- NAVIGATION BAR + LOGO -->
+
+    <div class="gridcontainer">
+        <div class="enrission">
+            <h4>ENRISSION INDIA</h4>
+        </div>
+        <div>
+            <ul class="nav-grid">
+<!-- <<<<<<< HEAD
+                <li class="list"><a href="#service">Our Service</a></li>
+                <li class="list"><a href="#aboutus">About Us</a></li>
+                <li class="list"><a href="#customer">Customer Service</a></li>
+                <li class="list"><a href="#contactus">Contact Us</a></li>
+======= -->
+                <li><a href="#service">Our Service</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#customer">Customer Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                
+            </ul>
+            <label for="check" class="ham" onclick="openNav()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+        </div>
+        <div class="butfirst">
+                    <a href="/form"><button class="buttonfirst" style="vertical-align:middle" ><span>Apply Here</span></button><a>
+        </div>
+    </div>
+    <div class="mobile-nav">
+        <ul>
+            <li onclick="openNav()"><a href="#service">Our Service</a></li>
+            <li onclick="openNav()"><a href="#service">About Us</a></li>
+            <li onclick="openNav()"><a href="#service">Customer Service</a></li>
+            <li onclick="openNav()"><a href="#service">Contact Us</a></li>      
+        </ul>
+    </div>
+    <script>
+        ham = document.querySelector(".ham");
+        nav= document.querySelector(".mobile-nav")
+        // ham.addEventListener("click", function(){
+        //     nav.classList.toggle("show")
+        //     console.log('yay')
+        // })
+        function openNav(){
+            nav.classList.toggle("show")
+            ham.classList.toggle("open")
+        }
+    </script>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <div class="logo">
+        <img src="{% static 'images/shirulogo.png' %}">
+    </div>
+
+    <div class="logophone">
+        <img src="{% static 'images/logo1.png' %}">
+        <img src="{% static 'images/logo12.png' %}">
+    </div>
+
+
+    <!-- COllage -->
+
+    <div class="gridcollage">
+        <div class="img2">
+            <img src="{% static 'images/pic2.png' %}">
+        </div>
+        <div class="para">
+            <p>Founded in 2020, we provide connections between
+            Indian Entrepreneurs and Japanese Investors for
+            their journey of building start-ups to a world-class company. 
+            We provide investments for all domains/business models
+            which are of social cause, technology-based, or any.</p>
+        </div>    
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- OUR SERVICE -->
+    <div class="ourservice" id="service">
+        <div class="redtext">
+            <h2>OUR SERVICE</h2>
+        </div>
+    </div>
+    
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- Different Culture -->
+
+    <div class="culturetext">
+        <h2>Different Culture? Different Language? SO WHAT!!</h2>    
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- CULTURE TEXT -->
+
+    <div class="division">
+        <div>
+            <p>
+                We are more than just Matchmakers.<br><br>
+
+                We are the only platform that overcomes cultural and linguistic barriers and serves as a bridge between Japan and India.We have more than a dozen Japanese investors who favor the vision of this service. Based on our experience, we know the investment criteria that Japanese investors are looking for, and we can bring out the best in entrepreneurs and make proposals that will stick with them. <br><br>
+
+                Because we would like many "entrepreneurs" to use our services,we do not charge any fees from your side. Just show us your enthusiasm and plans for your business. We will give the best presentations to Japanese investors and support your business to success.
+            </p>
+        </div>
+
+        <div class="divisionimg">
+            <img src="{% static 'images/logo2.png' %}">
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!--  OUR FLOW PROCESS -->
+
+    <div class="redtext" id="flowprocess">
+        <h2>OUR FLOW PROCESS</h2>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!--  OUR FLOW PROCESS -->
+
+    <!-- <div class="gray">
+        <div class="wowimg">
+            <img src="{% static 'images/step1.png' %}">
+        </div>
+        <div class="arrowimg">
+            <img src="{% static 'images/arrow2.png' %}">
+        </div>
+        <div class="wowimg">
+            <img src="{% static 'images/step2.png' %}">
+        </div>
+        <div class="arrowimg">
+            <img src="{% static 'images/arrow2.png' %}">
+        </div>
+        <div class="wowimg">
+            <img src="{% static 'images/step3.png' %}">
+        </div>
+        <div class="arrowimg">
+            <img src="{% static 'images/arrow2.png' %}">
+        </div>
+        <div class="wowimg">
+            <img src="{% static 'images/step4.png' %}">
+        </div>
+        <div class="arrowimg">
+            <img src="{% static 'images/arrow2.png' %}">
+        </div>
+        <div class="wowimg">
+            <img src="{% static 'images/step5.png' %}">
+        </div>
+<<<<<<< HEAD
+    </div>
+ -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- <div class="gray">
+        <div class="step1">
+            <div class="steptext"><h5>Step 1</h5></div>
+            <div><h4>Apply</h4></div>
+=======
+    </div> -->
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <div class="gray">
+        <div class="step">
+            <div class="steptext"><h5>Step 1</h5><br><h4>Apply</h4></div>
+
+            <div class="stepimg"><img src="{% static 'images/1.png' %}"></div>
+            <div class="step-bot"><h5>Fill out the form and apply from website</h5></div>
+        </div>
+        <div class="arrow2">
+            <img src="{% static 'images/arrow2.png' %}">
+        </div>
+        <div class="step">
+            <div class="steptext"><h5>Step 2</h5><br><h4>Interview & Screening</h4></div>
+            <div class="stepimg"><img src="{% static 'images/2.png' %}"></div>
+            <div class="step-bot"><h5>Brief intoduction of your buisness</h5></div>
+        </div>
+        <div class="arrow2">
+            <img src="{% static 'images/arrow2.png' %}">
+        </div>
+        <div class="step">
+            <div class="steptext"><h5>Step 3</h5><br><h4>Meeting</h4></div>
+            <div class="stepimg"><img src="{% static 'images/3.png' %}"></div>
+            <div class="step-bot"><h5>TO understand your buisness ,there are several meetings</h5></div>
+        </div>
+        <div class="arrow2">
+            <img src="{% static 'images/arrow2.png' %}">
+        </div>
+        <div class="step">
+            <div class="steptext"><h5>Step 4</h5><br><h4>Introduce</h4></div>
+            <div class="stepimg"><img src="{% static 'images/4.png' %}"></div>
+            <div class="step-bot"><h5>Your business will be introduced to Japanese investors by our staff</h5></div>
+        </div>
+        <div class="arrow2">
+            <img src="{% static 'images/arrow2.png' %}">
+        </div>
+        <div class="step">
+            <div class="steptext"><h5>Step 5</h5><br><h4>Connect</h4></div>
+            <div class="stepimg"><img src="{% static 'images/5.png' %}"></div>
+            <div class="step-bot"><h5>If the investors show interest, you will be able to raise your investment</h5></div>
+        </div>
+    </div> 
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- APPLY HERE BUTTON -->
+
+
+    <!-- <div class="grid-container">
+      <div class="applytext"><h6>Step 1<br></h6><h5>Apply</h5></div>
+      <div class="griditem"></div> 
+      <div class="applytext"><h6>Step 2<br></h6><h5>Interview & Screening</h5></div>
+      <div class="griditem"></div> 
+      <div class="applytext"><h6>Step 3<br></h6><h5>Meeting</h5></div> 
+      <div class="griditem"></div>  
+      <div class="applytext"><h6>Step 4<br></h6><h5>Introduce</h5></div>
+      <div class="griditem"></div> 
+      <div class="applytext"><h6>Step 5<br></h6><h5>Connect</h5></div>
+      <div class="applyimg"><img src="{% static 'images/1.png' %}" width="40%"></div> 
+      <div class="apllyarrow"><img src="{% static 'images/arrow2.png' %}"></div>
+      <div class="applyimg"><img src="{% static 'images/2.png' %}" width="50%"></div>  
+      <div class="apllyarrow"><img src="{% static 'images/arrow2.png' %}"></div>
+      <div class="applyimg"><img src="{% static 'images/3.png' %}" width="60%"></div>
+      <div class="apllyarrow"><img src="{% static 'images/arrow2.png' %}"></div>  
+      <div class="applyimg"><img src="{% static 'images/4.png' %}" width="45%"></div> 
+      <div class="apllyarrow"><img src="{% static 'images/arrow2.png' %}"></div>   
+      <div class="applyimg"><img src="{% static 'images/5.png' %}" width="35%"></div>  
+      <div class="applytxt"><h6>Fill out the form and apply from website</h6></div>  
+      <div class="griditem"></div> 
+      <div class="applytxt"><h6>Brief intoduction of your buisness</h6></div>
+      <div class="griditem"></div>    
+      <div class="applytxt"><h6>TO understand your buisness ,there are several meetings</h6></div>  
+      <div class="griditem"></div> 
+      <div class="applytxt"><h6>Your business will be introduced to Japanese investors by our staff</h6></div> 
+      <div class="griditem"></div> 
+      <div class="applytxt"><h6>If the investors show interest, you will be able to raise your investment</h6></div> 
+    </div> -->
+
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- APPLY HERE BUTTON -->
+        
+    </div>
+    <div class="but">
+        <a href="/form"><button class="button2" style="vertical-align:middle"><span>Apply Here</span></button><a>
+    </div>
+    
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- Different Culture -->
+
+    <div class="culturetext">
+        <h2>WHAT WE CAN OFFER</h2>    
+    </div>
+
+    <div class="text3">
+        <h3>If you become our partner/customer, there are several aspects we can offer for you.</h3>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- THREE EMBLEMBS -->
+
+    <div class="symbols">
+        <div class="threec">
+            <img src="{% static 'images/connect.png' %}">
+        </div>
+        <div class="txt">
+            <h3>Connection with Japanese Company</h3>
+        </div>
+        <div  class="threec">
+            <img src="{% static 'images/advertise.png' %}">
+        </div>
+        <div class="txt">
+            <h3>Advertize, post an employment information at "SHIRU-CAFE".</h3>
+        </div>
+        <div class="threec">
+            <img src="{% static 'images/community.png' %}">
+        </div>
+        <div class="txt">
+            <h3>"SHIRU-START UP!!" community</h3>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- ABOUT US -->
+
+
+    <div class="redtext" id="about">
+        <h2>ABOUT US</h2>
+    </div>    
+
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- ENRISSION Inc. -->
+
+    <div class="culturetext">
+        <h2>ENRISSION Inc.</h2>    
+    </div>
+
+    <br>
+    <br>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- ShIRU CAFE PHOTO -->
+
+    <div class="gridshiru">
+        <div class="img2">
+            <img src="{% static 'images/shiru.jpg' %}">
+        </div>
+        <div class="para">
+            <p>Since many IIT students need connections with new age Japanese investors, Mr. Yusuke  Kakimoto launched “SHIRU START-UP “ in 2020 to make a bridge between budding IIT Entrepreneurs and  investors from Japan. <br><br> We have curated a cafe called “SHIRU START-UP CAFE” in IITs, this is a hub for IIT student entrepreneurs to discuss, get mentorship , host events  , co-work and find potential Funding  for their start-ups.<br><br>In collaboration with entrepreneurship support organisation of IITs called
+            “ E-Cell”, we select the best start-ups and provide connections to Japanese investors and help them raise funds , mentorship and guidance .</p>
+        </div>    
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- SHIRU CAFE BUTTON -->
+        
+    </div>
+    <div class="but2">
+        <button class="button2" style="vertical-align:middle"><span>SHIRU CAFE</span></button>
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- OUR TEAM -->
+
+    <br><br>
+
+    <div class="redtext">
+        <h2>OUR TEAM</h2>
+    </div>    
+
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- PICTURES OF OWNER -->
+
+    <div class="team">
+        <div class="member">
+            <img src="{% static 'images/yusuke.png' %}" width="100%"> 
+            <h2>Mr Yusuke Kakimoto</h2>
+            <h3>(Founder & CEO)</h3>
+            <p>Graduated from Doshisha University Japan, he has established himself as a successful entrepreneur and a visionary leader. Enrission was founded by him in the year 2012 as he saw the opportunity that the students didn’t get a chance to know about the professional world during their academic life. This makes the students little hard to adjust themselves when they actually enter the professional world. Enrission provides that support to the students during their graduation which helps in the decision making of students for their future paths.</p>
+        </div>
+        <div class="member">
+            <img src="{% static 'images/winston.png' %}" width="100%">
+            <h2>Mr Winston Tixeira</h2>
+            <h3>(Operations Manager, SHIRU START-UP)</h3>
+            <p>A holder of Master’s in Business Administration from the University of Wales, UK. He thrives on challenge and constantly set goals for us and our India Business. Winston has worked with several big companies like IHC, Hilton Worldwide, Mars Enterprises, True North-Degustibus hospitality. Winston’s skillset allows us to nurture upcoming start-ups and help them with calm and calculated decisions be it fundraising or scaling and other allied activities. Graduating entrepreneurs from IIT or anywhere can directly contact for support.</p>
+        </div>
+    </div>
+
+
+    <div class="redtext" id="customer">
+        <h2>CUSTOMER SUCCESS</h2>
+    </div> 
+
+    <div class="contain">
+        <div class="box1" id="box1">
+            <div>
+                <img src="{% static 'images/cus1.png' %}" width="100%">
+            </div>
+            <div>
+                <img src="{% static 'images/cus2.png' %}" width="100%">
+            </div>
+            <div>
+                <img src="{% static 'images/cus3.png' %}" width="100%">
+            </div>
+        </div>
+
+
+        <div class="box2" id="box2">
+            <div>
+                <img src="{% static 'images/cus3.png' %}" width="100%">
+            </div>
+            <div>
+                <img src="{% static 'images/cus2.png' %}" width="100%">
+            </div>
+            <div>
+                <img src="{% static 'images/cus1.png' %}" width="100%">
+            </div>
+        </div>
+
+        <div>
+            <button class="btn2" onclick="myFunction()"><span>&#171;</span></button>
+        </div>
+
+        <div>
+            <button class="btn" onclick="myFunction()"><span>&#187;</span></button>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementByClass(box1).style.visibility="none";
+            document.getElementByClass(box2).style.display="grid"
+    </script>    
+
+
+
+
+
+    
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- CONTACT US -->
+    
+
+    <div class="redtext" id="contact">
+        <h2>CONTACT US</h2>
+    </div> 
+
+    <div class="maps">
+
+        <div class="address">
+            <h1>COMPANY NAME</h1>
+            <h2>ENRISSION India Private Limited</h2>
+            <br>
+            <h1>CEO</h1>
+            <h2>Yusuke Kakimoto</h2>
+            <br>
+            <img src="{% static 'images/location.png' %}">
+            <h1>OFFICE</h1>
+            <h2>F-143, RICHMOND PARK DLF PHASE-4 HARYANA Gurgaon HR 122002 IN</h2>
+            <h1>EMAIL ID</h1>
+            <h2>admin@enrission-india.com</h2>
+        </div>
+            
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.6812533411003!2d77.08553301505243!3d28.459023482486526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18c5a62ce527%3A0xd7849f91c7d845ae!2sRichmond%20Park!5e0!3m2!1sen!2sin!4v1645213896569!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+    </div>
+
+
+    <!-- FORM -->
+
+
+    <div class="formtext">
+        <h4>If you have any questions, feel free to contact us.</h4>
+    </div>
+
+    <form class="form" method="post" action="contact">
+        {% csrf_token %}
+        <input type="text" class="box" name="name" placeholder="Name">
+        <input type="text" class="box" name="mobile" placeholder="Mobile">
+        <input type="text" class="box" name="email" placeholder="Email ID">
+        <input type="text" class="box" name="subject" placeholder="Subject">
+        <textarea id="message" name="message" placeholder="Message"></textarea>
+        <!-- <div class="but3">
+            <button class="button2" type="submit" ><span>SEND</span></button>
+        </div> -->
+        <br>
+        <div class="but3">
+            <button class="button2" style="vertical-align:middle" type="submit"><span>Send</span></button>
+        </div>
+    </form>
+       <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- SEND BUTTON -->
+        
+    {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+
+
+    <div style="margin-top: 100px"></div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <!-- FOOTER -->
+
+    <div class="foot-container">
+        <div class="follow-us">
+            <div class="followtext">
+                <h3>Follow Us on</h3>
+            </div>
+            <div>
+                <img src="{% static 'images/in.png' %}" style="background-color: #ED2736">
+            </div>
+        </div>
+        <div class="copyright">
+            <h3>Copyright © 2021 ENRISSION Inc. All Rights Reserved</h3>
+        </div>
+
+        
+    </div>
+
+    
+    <div class="container">
+        <div class="sliderc">
+            <div id="sliden"   class="sliden" >Slide #6</div>
+            <img  src="{% static 'images/cus1.png' %}" alt="">
+            <img src="{% static 'images/cus2.png' %}" alt=""/>
+            <img src="{% static 'images/cus3.png' %}" alt=""/>
+            <img src="{% static 'images/cus2.png' %}" alt=""/>
+            <img src="{% static 'images/cus1.png' %}" alt=""/>        
+        </div>
+
+        <div class="sliderconts">
+            <span id="prev" class="btn2">&#171;</span>
+            <span id="indect" class="indect">
+
+            </span>
+            <span id="next" class="btn">&#187;</span>
+        </div>
+    </div>
+
+
+    <script>
+        var document, console;
+        var sliderimages = Array.from(document.querySelectorAll('.sliderc img'));
+        var slidescount = sliderimages.length;
+        var currentslide = 1;
+        var slidenumberelement = document.getElementById("sliden");
+        var prevbutton = document.getElementById("prev");
+        var nextbutton = document.getElementById("next");
+
+        nextbutton.onclick = nextslide;
+        prevbutton.onclick = prevslide;
+
+        var paginationelement = document.createElement('ul');
+        paginationelement.setAttribute('id', 'pagination-ul');
+
+        for (var i = 1; i<= slidescount ; i++ ){
+            var pagenationitem = document.createElement('li');
+            pagenationitem.setAttribute('data-index', i );
+            pagenationitem.appendChild(document.createTextNode(i))
+            paginationelement.appendChild(pagenationitem);
+            
+        }
+
+        document.getElementById('indect').appendChild(paginationelement);
+
+        var pagnationcreatedui = document.getElementById('pagination-ul');
+
+        var paginnationsbullets = Array.from(document.querySelectorAll('#pagination-ul li'));
+
+        for ( i = 0; i< paginnationsbullets.length ; i++){
+            paginnationsbullets[i].onclick = function () {
+                currentslide = parseInt(this.getAttribute('data-index'));
+                 thechecker();     
+            }
+        }
+
+        thechecker();
+
+
+
+        function nextslide(){
+            if (nextbutton.classList.contains('dis')){
+                return false;
+                
+            } else{
+              currentslide++;
+         thechecker();     
+            }
+
+        }
+        function prevslide(){
+          if (prevbutton.classList.contains('dis')){
+                return false;
+                
+            } else{
+              currentslide--;
+         thechecker();     
+            }
+
+        }
+
+        function thechecker(){
+            slidenumberelement.textContent = 'slide #' + (currentslide) + ' of ' + (slidescount);
+            removeallactive();
+
+
+
+            sliderimages[currentslide - 1].classList.add('active');
+            pagnationcreatedui.children[currentslide - 1].classList.add('active');
+            
+            
+            
+            if(currentslide == 1){
+                prevbutton.classList.add('dis');
+            } else{
+                prevbutton.classList.remove('dis');   
+            }
+            if(currentslide == slidescount){
+                nextbutton.classList.add('dis');
+            } else{
+                nextbutton.classList.remove('dis');   
+            }
+        }
+
+
+        function removeallactive() {
+            sliderimages.forEach(function (img){
+                img.classList.remove('active');
+                
+            });
+        paginnationsbullets.forEach(function (bullet){
+            bullet.classList.remove('active');
+        });
+        }
+    </script>
+</body>
+</html>

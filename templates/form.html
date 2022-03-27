@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<title>
+	</title>
+</head>
+<body>
+	<form class="form200" method="post" action="submitall">
+        {% csrf_token %}
+        <label class="redtext"><h5>Application form</h5></label>
+        <label class="boxtext"><h5>Your E-mail address *</h5></label>
+        <input type="text" class="boxes" name="emailid">
+        <label class="boxtext"><h5>Founder Profile [Format - Name / Educational Institutions attended / Role]</h5></label>
+        <input type="text" class="boxes" name="profile" placeholder="Example: Winston Tixeria / IIT○○ / CEO">
+        <label class="boxtext"><h5>Linkedin Profile *</h5></label>
+        <input type="text" class="boxes" name="linkedin">
+        <label class="boxtext"><h5>Who is the CEO (representative) of this company? *</h5></label>
+        <input type="text" class="boxes" name="ceo" placeholder="Name">
+        <label class="boxtext"><h5>Start-up name *</h5></label>
+        <input type="text" class="boxes" name="startup">
+        <label class="boxtext"><h5>Website link *</h5></label>
+        <input type="text" class="boxes" name="weblink">
+        <label class="boxtext"><h5>Established date *</h5></label>
+        <input type="text" class="boxes" name="estdate">
+        <label class="boxtext"><h5>Where is your target market?*</h5></label>
+        <input type="text" class="boxes" name="targetmarket" placeholder="Ex- Mobile Game market, Microfinance market, EMR">
+        <label class="boxtext"><h5>How big is your target market? (in USD) *</h5></label>
+        <input type="text" class="boxes" name="targetsize">
+        <label class="boxtext"><h5>Do you have prior funding? If so, how much did you raise?(in USD) *</h5></label>
+        <input type="text" class="boxes" name="funding">
+        <label class="boxtext"><h5>Who is your previous investors? * <br>(Please write VC's name if you have one. Angle investors can be written "angle investors")</h5></label>
+        <input type="text" class="boxes" name="investors">
+        <label class="boxtext"><h5>You last month's revenue *</h5></label>
+        <input type="text" class="boxes" name="monthrevenue1">
+        <label class="boxtext"><h5>Your last second month's revenue *</h5></label>
+        <input type="text" class="boxes" name="monthrevenue2">
+        <label class="boxtext"><h5>Your last third month's revenue. *</h5></label>
+        <input type="text" class="boxes" name="monthrevenue3">
+        <label class="boxtext"><h5>Please share your pitch deck (presentation) with us. *</h5></label>
+        <input type="text" class="boxes" name="presentation">
+        <br>
+        <br>
+        <br>
+        <div class="but4"><button type="submit" class="button3"><span>  SEND </span></button></div>
+    </form>
+</body>
+</html>
