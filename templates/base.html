@@ -435,6 +435,7 @@
         function myFunction() {
             document.getElementByClass(box1).style.visibility="none";
             document.getElementByClass(box2).style.display="grid"
+        }
     </script>    
 
 
@@ -530,120 +531,5 @@
     </div>
 
     
-    <div class="container">
-        <div class="sliderc">
-            <div id="sliden"   class="sliden" >Slide #6</div>
-            <img  src="{% static 'images/cus1.png' %}" alt="">
-            <img src="{% static 'images/cus2.png' %}" alt=""/>
-            <img src="{% static 'images/cus3.png' %}" alt=""/>
-            <img src="{% static 'images/cus2.png' %}" alt=""/>
-            <img src="{% static 'images/cus1.png' %}" alt=""/>        
-        </div>
-
-        <div class="sliderconts">
-            <span id="prev" class="btn2">&#171;</span>
-            <span id="indect" class="indect">
-
-            </span>
-            <span id="next" class="btn">&#187;</span>
-        </div>
-    </div>
-
-
-    <script>
-        var document, console;
-        var sliderimages = Array.from(document.querySelectorAll('.sliderc img'));
-        var slidescount = sliderimages.length;
-        var currentslide = 1;
-        var slidenumberelement = document.getElementById("sliden");
-        var prevbutton = document.getElementById("prev");
-        var nextbutton = document.getElementById("next");
-
-        nextbutton.onclick = nextslide;
-        prevbutton.onclick = prevslide;
-
-        var paginationelement = document.createElement('ul');
-        paginationelement.setAttribute('id', 'pagination-ul');
-
-        for (var i = 1; i<= slidescount ; i++ ){
-            var pagenationitem = document.createElement('li');
-            pagenationitem.setAttribute('data-index', i );
-            pagenationitem.appendChild(document.createTextNode(i))
-            paginationelement.appendChild(pagenationitem);
-            
-        }
-
-        document.getElementById('indect').appendChild(paginationelement);
-
-        var pagnationcreatedui = document.getElementById('pagination-ul');
-
-        var paginnationsbullets = Array.from(document.querySelectorAll('#pagination-ul li'));
-
-        for ( i = 0; i< paginnationsbullets.length ; i++){
-            paginnationsbullets[i].onclick = function () {
-                currentslide = parseInt(this.getAttribute('data-index'));
-                 thechecker();     
-            }
-        }
-
-        thechecker();
-
-
-
-        function nextslide(){
-            if (nextbutton.classList.contains('dis')){
-                return false;
-                
-            } else{
-              currentslide++;
-         thechecker();     
-            }
-
-        }
-        function prevslide(){
-          if (prevbutton.classList.contains('dis')){
-                return false;
-                
-            } else{
-              currentslide--;
-         thechecker();     
-            }
-
-        }
-
-        function thechecker(){
-            slidenumberelement.textContent = 'slide #' + (currentslide) + ' of ' + (slidescount);
-            removeallactive();
-
-
-
-            sliderimages[currentslide - 1].classList.add('active');
-            pagnationcreatedui.children[currentslide - 1].classList.add('active');
-            
-            
-            
-            if(currentslide == 1){
-                prevbutton.classList.add('dis');
-            } else{
-                prevbutton.classList.remove('dis');   
-            }
-            if(currentslide == slidescount){
-                nextbutton.classList.add('dis');
-            } else{
-                nextbutton.classList.remove('dis');   
-            }
-        }
-
-
-        function removeallactive() {
-            sliderimages.forEach(function (img){
-                img.classList.remove('active');
-                
-            });
-        paginnationsbullets.forEach(function (bullet){
-            bullet.classList.remove('active');
-        });
-        }
-    </script>
 </body>
 </html>
