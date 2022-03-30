@@ -7,10 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Shiru Cafe</title>
 </head>
 <body>
@@ -82,7 +86,7 @@
 
     <!-- COllage -->
 
-    <div class="gridcollage">
+    <div class="gridcollage" data-aos="fade-up" data-aos-duration="1000">
         <div class="img2">
             <img src="{% static 'images/pic2.png' %}">
         </div>
@@ -109,8 +113,8 @@
     <!-- ---------------------------------------------------------------------------------------------------- -->
 
     <!-- Different Culture -->
-
-    <div class="culturetext">
+    
+    <div class="culturetext" data-aos="fade-up" data-aos-duration="1000">
         <h2>Different Culture? Different Language? SO WHAT!!</h2>    
     </div>
 
@@ -118,7 +122,7 @@
 
     <!-- CULTURE TEXT -->
 
-    <div class="division">
+    <div class="division" data-aos="fade-left" data-aos-duration="1000">
         <div>
             <p>
                 We are more than just Matchmakers.<br><br>
@@ -129,7 +133,7 @@
             </p>
         </div>
 
-        <div class="divisionimg">
+        <div class="divisionimg" data-aos="fade-right" data-aos-duration="1000">
             <img src="{% static 'images/logo2.png' %}">
         </div>
     </div>
@@ -192,40 +196,40 @@
     <!-- ---------------------------------------------------------------------------------------------------- -->
 
     <div class="gray">
-        <div class="step">
+        <div class="step" data-aos="fade-right" data-aos-duration="1000">
             <div class="steptext"><h5>Step 1</h5><br><h4>Apply</h4></div>
 
             <div class="stepimg"><img src="{% static 'images/1.png' %}"></div>
             <div class="step-bot"><h5>Fill out the form and apply from website</h5></div>
         </div>
-        <div class="arrow2">
+        <div class="arrow2" data-aos="fade-right" data-aos-duration="1000">
             <img src="{% static 'images/arrow2.png' %}">
         </div>
-        <div class="step">
+        <div class="step" data-aos="fade-right" data-aos-duration="1000">
             <div class="steptext"><h5>Step 2</h5><br><h4>Interview & Screening</h4></div>
             <div class="stepimg"><img src="{% static 'images/2.png' %}"></div>
             <div class="step-bot"><h5>Brief intoduction of your buisness</h5></div>
         </div>
-        <div class="arrow2">
+        <div class="arrow2" data-aos="fade-right" data-aos-duration="1000">
             <img src="{% static 'images/arrow2.png' %}">
         </div>
-        <div class="step">
+        <div class="step" data-aos="fade-right" data-aos-duration="1000">
             <div class="steptext"><h5>Step 3</h5><br><h4>Meeting</h4></div>
             <div class="stepimg"><img src="{% static 'images/3.png' %}"></div>
             <div class="step-bot"><h5>TO understand your buisness ,there are several meetings</h5></div>
         </div>
-        <div class="arrow2">
+        <div class="arrow2" data-aos="fade-right" data-aos-duration="1000">
             <img src="{% static 'images/arrow2.png' %}">
         </div>
-        <div class="step">
+        <div class="step" data-aos="fade-right" data-aos-duration="1000">
             <div class="steptext"><h5>Step 4</h5><br><h4>Introduce</h4></div>
             <div class="stepimg"><img src="{% static 'images/4.png' %}"></div>
             <div class="step-bot"><h5>Your business will be introduced to Japanese investors by our staff</h5></div>
         </div>
-        <div class="arrow2">
+        <div class="arrow2" data-aos="fade-right" data-aos-duration="1000">
             <img src="{% static 'images/arrow2.png' %}">
         </div>
-        <div class="step">
+        <div class="step" data-aos="fade-right" data-aos-duration="1000">
             <div class="steptext"><h5>Step 5</h5><br><h4>Connect</h4></div>
             <div class="stepimg"><img src="{% static 'images/5.png' %}"></div>
             <div class="step-bot"><h5>If the investors show interest, you will be able to raise your investment</h5></div>
@@ -291,7 +295,7 @@
 
     <!-- THREE EMBLEMBS -->
 
-    <div class="symbols">
+    <div class="symbols" data-aos="fade-in" data-aos-duration="1000">
         <div class="threec">
             <img src="{% static 'images/connect.png' %}">
         </div>
@@ -339,9 +343,9 @@
 
     <!-- ShIRU CAFE PHOTO -->
 
-    <div class="gridshiru">
+    <div class="gridshiru" data-aos="fade-up" data-aos-duration="1000">
         <div class="img2">
-            <img src="{% static 'images/shiru.jpg' %}">
+            <img src="{% static 'images/shiru.JPG' %}">
         </div>
         <div class="para">
             <p>Since many IIT students need connections with new age Japanese investors, Mr. Yusuke  Kakimoto launched “SHIRU START-UP “ in 2020 to make a bridge between budding IIT Entrepreneurs and  investors from Japan. <br><br> We have curated a cafe called “SHIRU START-UP CAFE” in IITs, this is a hub for IIT student entrepreneurs to discuss, get mentorship , host events  , co-work and find potential Funding  for their start-ups.<br><br>In collaboration with entrepreneurship support organisation of IITs called
@@ -377,13 +381,13 @@
     <!-- PICTURES OF OWNER -->
 
     <div class="team">
-        <div class="member">
+        <div class="member" data-aos="fade-right" data-aos-duration="1000">
             <img src="{% static 'images/yusuke.png' %}" width="100%"> 
             <h2>Mr Yusuke Kakimoto</h2>
             <h3>(Founder & CEO)</h3>
             <p>Graduated from Doshisha University Japan, he has established himself as a successful entrepreneur and a visionary leader. Enrission was founded by him in the year 2012 as he saw the opportunity that the students didn’t get a chance to know about the professional world during their academic life. This makes the students little hard to adjust themselves when they actually enter the professional world. Enrission provides that support to the students during their graduation which helps in the decision making of students for their future paths.</p>
         </div>
-        <div class="member">
+        <div class="member" data-aos="fade-left" data-aos-duration="1000">
             <img src="{% static 'images/winston.png' %}" width="100%">
             <h2>Mr Winston Tixeira</h2>
             <h3>(Operations Manager, SHIRU START-UP)</h3>
@@ -392,55 +396,18 @@
     </div>
 
 
-    <div class="redtext" id="customer">
-        <h2>CUSTOMER SUCCESS</h2>
+    <div class="redtext" id="contact">
+        <h2>Customer Success</h2>
     </div> 
-
-    <div class="contain">
-        <div class="box1" id="box1">
-            <div>
-                <img src="{% static 'images/cus1.png' %}" width="100%">
-            </div>
-            <div>
-                <img src="{% static 'images/cus2.png' %}" width="100%">
-            </div>
-            <div>
-                <img src="{% static 'images/cus3.png' %}" width="100%">
-            </div>
-        </div>
+    <div class="customers" style="background-color: #ED2736;">
+        <div class="ind-cus" style="padding: 10px;"><img src="{% static 'images/cus1.png' %}" width="100%"></div>
+        <div class="ind-cus" style="padding: 10px;"><img src="{% static 'images/cus2.png' %}" width="100%"></div>
+        <div class="ind-cus" style="padding: 10px;"><img src="{% static 'images/cus3.png' %}" width="100%"></div>
+        <div class="ind-cus" style="padding: 10px;"><img src="{% static 'images/cus4.jpeg' %}" width="100%"></div>
+        <div class="ind-cus" style="padding: 10px;"><img src="{% static 'images/cus5.png' %}" width="100%"></div>
 
 
-        <div class="box2" id="box2">
-            <div>
-                <img src="{% static 'images/cus3.png' %}" width="100%">
-            </div>
-            <div>
-                <img src="{% static 'images/cus2.png' %}" width="100%">
-            </div>
-            <div>
-                <img src="{% static 'images/cus1.png' %}" width="100%">
-            </div>
-        </div>
-
-        <div>
-            <button class="btn2" onclick="myFunction()"><span>&#171;</span></button>
-        </div>
-
-        <div>
-            <button class="btn" onclick="myFunction()"><span>&#187;</span></button>
-        </div>
     </div>
-
-    <script>
-        function myFunction() {
-            document.getElementByClass(box1).style.visibility="none";
-            document.getElementByClass(box2).style.display="grid"
-        }
-    </script>    
-
-
-
-
 
     
     <!-- ---------------------------------------------------------------------------------------------------- -->
@@ -506,14 +473,83 @@
         {% endfor %}
 
     {% endif %}
+    <!-- <div class="clients" style="position: relative;">
+        <h1 style="text-align: center;">Our Customers</h1>
+    <div class="items">
+		<div class="item active">
+			<img src="{% static 'images/cus1.png' %}">
+		</div>
+		<div class=" item next">
+			<img src="{% static 'images/cus2.png' %}">
+		</div>
+		<div class="item">
+			<img src="{% static 'images/cus3.png' %}">
+		</div>
+		<div class="item">
+			<img src="{% static 'images/cus4.jpeg' %}">
+		</div>
+		<div class="item prev">
+			<img src="{% static 'images/cus5.png' %}">
+		</div>
+	</div>
+    <div class="button-container">
+        <div class="car button"><</div>
+        <div class="car button">></div>
+    </div>
+    </div>
+    
+    <script>
+        const slider = document.querySelector(".items");
+		const slides = document.querySelectorAll(".item");
+		const button = document.querySelectorAll(".car.button");
 
+		let current = 0;
+		let prev = 4;
+		let next = 1;
 
-    <div style="margin-top: 100px"></div>
+		for (let i = 0; i < button.length; i++) {
+			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+		}
 
+		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+		const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+
+		const gotoNum = number => {
+			current = number;
+			prev = current - 1;
+			next = current + 1;
+
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].classList.remove("active");
+				slides[i].classList.remove("prev");
+				slides[i].classList.remove("next");
+			}
+
+			if (next == 5) {
+				next = 0;
+			}
+
+			if (prev == -1) {
+				prev = 4;
+			}
+
+			slides[current].classList.add("active");
+			slides[prev].classList.add("prev");
+			slides[next].classList.add("next");
+		}
+    </script> -->
+
+    
     <!-- ---------------------------------------------------------------------------------------------------- -->
 
     <!-- FOOTER -->
-
+    <!-- <div>
+        <span class="but8">
+            <a href="#"></a>
+        </span>
+    </div> -->
+    
     <div class="foot-container">
         <div class="follow-us">
             <div class="followtext">
@@ -530,6 +566,38 @@
         
     </div>
 
-    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.customers').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        arrows: true,
+        responsive: [
+    {
+      breakpoint: 981,
+      settings: {
+        centerMode: true,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 660,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1
+      }
+    }
+  ]
+      });
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

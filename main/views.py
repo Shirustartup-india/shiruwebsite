@@ -19,6 +19,7 @@ def contactus(request):
 		message = request.POST.get('message')
 		person = contact(name=name, mobile=mobile, email=email, subject=subject, message=message)
 		person.save()
+		messages.success(request, 'Request Sent Successfully')
 		subject = "Enquiry"
 		body = {
 			'name' : str("Name :" + request.POST.get('name')),
@@ -32,7 +33,7 @@ def contactus(request):
 			send_mail(subject, message, 'shirustartup.cafe@gmail.com', ['shirustartup.cafe@gmail.com']) 
 		except BadHeaderError:
 			return HttpResponse('Invalid header found.')
-		return render(request, "success.html")
+		return render(request, "base.html")
 	return render(request, "index.html")
 
 def form(request):
@@ -60,6 +61,7 @@ def former(request):
 			estdate=estdate, targetmarket=targetmarket, targetsize=targetsize, funding=funding, investors=investors, 
 			monthrevenue1=monthrevenue1, monthrevenue2=monthrevenue2, monthrevenue3=monthrevenue3, presentation=presentation)
 		person.save()
+		messages.success(request, 'Registration Details Sent Successfully')
 		subject = "New Entry"
 		body = {
 			'emailid' : str("Email: " + request.POST.get('emailid')),
